@@ -5,10 +5,18 @@ const cors = require('./src/middlewares/cors');
 const convertRoute = require('./src/routes/convertRoute');
 
 const app = express();
-const port = 3000;
+const port = 3030;
 
 // Configuração do CORS
 app.use(cors);
+
+app.use('/javascript', express.static(path.join(__dirname, 'public/javascript'), (req, res, next) => {
+    // Definir header MIME type correto para módulos JavaScript
+    if (path.extname(req.path) === '.js') {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+    next();
+  }));
 
 // Servir arquivos estáticos da pasta 'public'
 app.use(express.static(path.join(__dirname, 'public')));

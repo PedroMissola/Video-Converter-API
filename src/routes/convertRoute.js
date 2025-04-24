@@ -66,7 +66,7 @@ router.post("/convert", upload.array("files", 10), async (req, res) => {
 
             results.push({
                 original: file.originalname,
-                fileUrl: `http://localhost:3000/uploads/${outputName}`,
+                fileUrl: `http://localhost:3030/uploads/${outputName}`,
                 nome: outputName
             });
         }
