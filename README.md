@@ -1,8 +1,8 @@
-# Video Converter API
+# Video Converter - Website
 
 ## Descrição
 
-O **Video Converter API** é uma aplicação simples construída em **Node.js** usando **Express** para oferecer um serviço de conversão de vídeos. A API permite que usuários façam upload de arquivos de vídeo, convertam-nos para o formato `.mp4` e façam o download dos arquivos convertidos diretamente através de URLs geradas.
+O **Video Converter - Website** é uma aplicação simples construída em **Node.js** usando **Express** para oferecer um serviço de conversão de vídeos. A API permite que usuários façam upload de arquivos de vídeo, convertam-nos para o formato `.mp4` e façam o download dos arquivos convertidos diretamente através de URLs geradas.
 
 A API usa **ffmpeg** para realizar a conversão de vídeos e **Multer** para gerenciar uploads de arquivos. A conversão é realizada em segundo plano e, ao final, o usuário recebe links para baixar os vídeos convertidos.
 
@@ -36,8 +36,8 @@ Antes de rodar a aplicação, você precisará ter o seguinte instalado:
 Clone este repositório para a sua máquina local.
 
 ```bash
-git clone https://github.com/SeuUsuario/video-converter-api.git
-cd video-converter-api
+git clone https://github.com/SeuUsuario/video-converter_website.git
+cd video-converter_website
 ```
 
 ### 2. Instale as Dependências
